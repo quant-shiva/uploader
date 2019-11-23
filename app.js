@@ -12,10 +12,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser());
 
 app.use("/upload", uploadImage);
-app.get("/", (req, res) => {
-  console.log(process.env.CLOUD_NAME);
-  res.end("ho gaya!!!");
-});
 
 port = process.env.port || 3000;
 
