@@ -25,3 +25,8 @@ API to upload image to cloudinary cloud service.
     enctype - multipart/form-data
     response - JSON Object
     Image Url - Object.url and Object.secure_url
+
+## Error response
+
+    403 - request method not supported
+    500 - Image not uploaded to cloud
